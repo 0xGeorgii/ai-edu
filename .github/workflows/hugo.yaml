@@ -5,7 +5,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches:
-      - main
+      - master
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -50,8 +50,8 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Install PaperMod theme
-        run: git clone https://github.com/nunocoracao/blowfish.git themes/blowfish --depth=1
+      # - name: Install PaperMod theme
+      #   run: git clone https://github.com/nunocoracao/blowfish.git themes/blowfish --depth=1
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
