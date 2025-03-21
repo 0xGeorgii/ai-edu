@@ -9,31 +9,6 @@
     padding-left: 1.5em;
   }
 
-  /* Container with background image */
-.bg-overlay {
-  position: relative;
-  background: url('{{ "images/3.jpg" | relURL }}') no-repeat center center;
-  background-size: cover;
-}
-
-/* Pseudo-element overlay for semi-transparency */
-.bg-overlay::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5); /* Adjust color and opacity as needed */
-  z-index: 1;
-}
-
-/* Ensure content sits above the overlay */
-.bg-overlay > * {
-  position: relative;
-  z-index: 2;
-}
-
 </style>
 
 <body class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
