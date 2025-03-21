@@ -270,21 +270,56 @@
     position: relative;
     padding-left: 1.5em;
   }
+
+   
+.bg-overlay {
+  position: relative;
+  background: url('/images/3.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+ 
+.bg-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);  
+  z-index: 1;
+}
+
+ 
+.bg-overlay > * {
+  position: relative;
+  z-index: 2;
+}
+
 </style>
 
 <body class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
   
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
+      <article class="flex flex-col items-center text-center py-8">
+        <img src=/images/5.jpg alt="AI" class="w-1/2 rounded-lg nozoom" />
+      </article>
       <article class="flex flex-col items-center text-center">
         <header class="relative px-1 py-1 flex flex-col items-center mb-3">
           <h1 class="text-4xl font-extrabold">
             みんなのための週末AIブートキャンプ！ 🚀
           </h1>
-          <div class="mt-1 text-2xl"></div>
+          <div class="mt-1 text-2xl">AI の力を生活に活用しましょう。技術の専門家である必要はありません。</div>
+          <p>
+            AIの力を使って日常の課題を解決しましょう。実践型の2日間ブートキャンプに参加して、AIがあなたの創造性、生産性、そして個人の効率をどのように高めるかを体感してください。💡✨
+          </p>
         </header>
       </article>
-      <article class="flex flex-col items-center text-center py-8">
+      <article py-8>
+        <video src=/images/vid1.mp4 autoplay loop muted playsinline></video>
+      </article>
+      <article class="py-8">
         <header class="relative px-1 py-1 flex flex-col items-center mb-3">
           <h1 class="text-4xl font-extrabold">
             このブートキャンプに参加する理由 🤔
@@ -299,7 +334,10 @@
           </ul>
         </section>
       </article>
-      <article class="flex flex-col items-center text-center py-8">
+      <article class="py-8">
+        <img src=/images/4.jpg alt="AI" class="w-1/2 rounded-lg nozoom" />
+      </article>
+      <article class="py-8">
         <header class="relative px-1 py-1 flex flex-col items-center mb-3">
           <h1 class="text-4xl font-extrabold">
             学べる内容 📚
@@ -320,7 +358,10 @@
           </ul>
         </section>
       </article>
-      <article class="flex flex-col items-center text-center py-8">
+      <article py-8>
+        <video src=/images/vid3.mp4 autoplay loop muted playsinline></video>
+      </article>
+      <article class="py-8">
         <header class="relative px-1 py-1 flex flex-col items-center mb-3">
           <h1 class="text-4xl font-extrabold">
             ブートキャンプスケジュール 📅
@@ -343,7 +384,10 @@
           </ul>
         </section>
       </article>
-      <article class="flex flex-col items-center text-center py-8">
+      <article class="py-8">
+        <img src=/images/3.jpg alt="AI" class="w-1/2 rounded-lg nozoom" />
+      </article>
+      <article class="py-8">
         <header class="relative px-1 py-1 flex flex-col items-center mb-3">
           <h1 class="text-4xl font-extrabold">
             実生活での活用例 💼
@@ -358,7 +402,10 @@
           </ul>
         </section>
       </article>
-      <article class="flex flex-col items-center text-center py-8">
+      <article py-8>
+        <video src=/images/vid2.mp4 autoplay loop muted playsinline></video>
+      </article>
+      <article class="py-8">
         <header class="relative px-1 py-1 flex flex-col items-center mb-3">
           <h1 class="text-4xl font-extrabold">
             講師のご紹介 👨‍🏫
@@ -374,7 +421,10 @@
           </ul>
         </section>
       </article>
-      <article class="flex flex-col items-center text-center py-8">
+      <article class="py-8">
+        <img src=/images/6.jpg alt="AI" class="w-1/2 rounded-lg nozoom" />
+      </article>
+      <article class="py-8">
         <header class="relative px-1 py-1 flex flex-col items-center mb-3">
           <h1 class="text-4xl font-extrabold">
             プログラム詳細 📌
@@ -389,7 +439,7 @@
           </ul>
         </section>
       </article>
-      <article class="flex flex-col items-center text-center py-8">
+      <article class="py-8">
         <header class="relative px-1 py-1 flex flex-col items-center mb-3">
           <h1 class="text-4xl font-extrabold">
             AIであなたの人生を変えませんか? 🚀
